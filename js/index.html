@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lab FireBase</title>
+</head>
+<body>
+    <div id="containerBtn">
+        <button class="boton" id="btnCandidato"> Mirar candidatos</button>
+        <button class="boton" id="btnVotaciones"> Mirar votaciones</button>
+    </div>
+    <div id="container">
+        <h1 id="titulo">Lapsus Napoleaón</h1>
+        <h3 id="subtitulo">Registre candidato para la encuesta</h3>
+        <input id="idRegistro" type="text" placeholder="ID">
+        <input id="nombre" type="text" placeholder="Nombre">
+        <button class="boton" id="btnRegistrar">Registrar</button>
+        <h3 id="subtutulo2">Vota por el candidato usando su ID</h3>
+        <input id="idvotar" type="text" placeholder="ID">
+        <button class="boton" id="votar">Votar</button>
+    </div>
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+        apikey: "AIzaSyBXbqjjSUuNOqLnG2bFln2IrC48Lf4C7yI",
+        authDomain: "lab-firebase-f8cb9.firebaseapp.com",
+        databaseURL: "https://lab-firebase-f8cb9.firebaseio.com",
+        projectId: "lab-firebase-f8cb9",
+        storageBucket: "lab-firebase-f8cb9.appspot.com",
+        messagingSenderId: "948937215127",
+        appId: "1:948937215127:web:734ff504f2769332236dd2",
+        measurementId: "G-9DT6V6Q93K"
+    };
+    firebase.initialzeApp(firebaseConfig);
+</script>
+<script src="/js/index.html"></script>
